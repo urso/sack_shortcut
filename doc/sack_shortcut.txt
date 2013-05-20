@@ -1,0 +1,73 @@
+*sack_shortcut.txt* open sack shortcuts from inside vim
+
+                      _            _                _             _         ~
+       ___  __ _  ___| | __    ___| |__   ___  _ __| |_ ___ _   _| |_ ___   ~
+      / __|/ _` |/ __| |/ /   / __| '_ \ / _ \| '__| __/ __| | | | __/ __|  ~
+      \__ \ (_| | (__|   <    \__ \ | | | (_) | |  | || (__| |_| | |_\__ \  ~
+      |___/\__,_|\___|_|\_\   |___/_| |_|\___/|_|   \__\___|\__,_|\__|___/  ~
+                                                                            ~
+                    sack cross terminal shortcut loader
+
+===============================================================================
+CONTENTS                                                *SackShortcutsContents*
+
+    1. Introduction .......................... |SackShortcutsIntro|
+    2. Usage ................................. |SackShortcutsUsage|
+    3. Configuration ......................... |SackShortcutsConfiguration|
+    4. License ............................... |SackShortcutsLicense|
+
+===============================================================================
+Section 1: Introduction                                    *SackShortcutsIntro*
+
+sack provides wrapper scripts for ack, ag
+(aka The Silver Searcher) and grep adding (cross-terminal) shortcuts and
+profiles.
+
+This plugin adds support for opening cross-terminal shortcuts from inside vim
+for better integration of grep like searches across terminal and vim sessions.
+
+sack and its documentation can be found on github at
+https://github.com/sampson-chen/sack.
+
+===============================================================================
+Section 2: Usage                                           *SackShortcutsUsage*
+
+The sack shortcuts plugin provides the command ':F', ':Fsplit", ':Fvsplit' and
+':Ftab' for opening a cross-terminal shortcut in the current vim buffer: >
+
+    :F <num><CR>
+
+commands:
+
+:F <number>                                                                *:F*
+    Opens shortcut <number> in current buffer.
+
+:Fsplit <number>                                                      *:Fsplit*
+    Opens shortcut <number> in horizontal split window
+
+:Fvsplit <number>                                                    *:Fvsplit*
+    Opens shortcut <number> in vertical split window
+
+:Ftab <number>                                                          *:Ftab*
+    Opens shortcut <number> in new tab
+
+
+===============================================================================
+Section 3: Configuration                           *SackShortcutsConfiguration*
+
+sack shortcuts can be configured by setting global variables in your .vimrc
+file: >
+
+    let g:sack_shortcuts_file = "~/.sack_shortcuts"
+
+-------------------------------------------------------------------------------
+3.1 g:sack_shortcuts_file                                 *sack_shortcuts_file*
+
+Configure sack shortcuts file.
+
+Default: ~/.sack_shortcuts
+
+===============================================================================
+Section 4: License                                       *SackShortcutsLicense*
+
+GPLv2+. Look it up.
