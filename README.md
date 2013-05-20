@@ -23,7 +23,8 @@ Add this repository to your vundle file:
 
 Copy this directory to yur bundles directory:
 
-    git clone https://github.com/urso/github-theme.git $(HOME)/.vim/bundle
+    $ git clone https://github.com/urso/github-theme.git \
+        $(HOME)/.vim/bundle/sack_shortcut
 
 [1]: https://github.com/sampson-chen/sack.
 [2]: http://beyondgrep.com/
