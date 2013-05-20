@@ -1,4 +1,3 @@
-
 # Introduction
 
 Vim plugin for loading sack shortcuts.
